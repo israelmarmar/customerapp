@@ -1,0 +1,27 @@
+<div class="container-fluid">
+<h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Customer</h2>
+
+
+<button class="btn btn-primary" routerLink="/newcustomer" >Add New Customer</button>
+
+<div class="grid grid-pad">
+
+	<ul>
+  	<li *ngFor="let c of customer" class="costumers card border-primary mb-3 col-1-4">
+  		<div  style="max-width: 18rem;">
+  		<a routerLink="/detail/{{c.id}}">
+  			<div class="card-header bagde">{{c.name}}</div>
+  		</a>
+  			<div class="card-body text-primary">
+    			<h6 class="card-title"><img src={{c.image}}/>{{c.location}}</h6>
+    			
+  			</div>
+  		</div>
+  	</li>
+  	</ul>
+
+
+</div>
+
+
+</div>
