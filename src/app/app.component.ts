@@ -8,7 +8,7 @@ import { LoggedInService } from './_services/loggedin.service';
   
 })
 export class AppComponent {
-  title = 'Costumers app';
+  title = 'Customers manager';
   isUserLoggedIn: boolean;
 
   constructor(private loggedInService: LoggedInService) { }
